@@ -1,4 +1,4 @@
-package AmazonTestCases;
+ package AmazonTestCases;
 
 import org.testng.annotations.Test;
 import java.util.List;
@@ -19,7 +19,7 @@ public class TestCases extends BaseClass {
 	@BeforeMethod// telling compiler which method is going to run - annotaions
 	public void initialization()
 	{
-	driver = browserintialization("Chrome");// open browser
+	driver = browserintialization("edge");// open browser
 	driver.get("https://www.amazon.in"); //getting link - for amazon
 	//driver.get("https://form.immigration.ca/skilled-worker/");
 	// driver.get("https://www.immigration.ca/");
@@ -154,6 +154,10 @@ public class TestCases extends BaseClass {
 
 	driver.navigate().to("https://form.immigration.ca/skilled-worker/");
 	driver.findElement(By.xpath("(//label[text()='Yes'])[1]")).click();
+	
+			
+	
+	
 	}
 
 
